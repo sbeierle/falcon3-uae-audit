@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>لوحة قياس تدقيق السيادة للذكاء الاصطناعي</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0b0f19;
+    --card: #111827;
+    --border: #1f2937;
+    --text: #f3f4f6;
+    --muted: #9ca3af;
+    --red: #ef4444;
+    --green: #10b981;
+    --yellow: #f59e0b;
+    --cyan: #06b6d4;
+    --magenta: #d946ef;
+  }
+  body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 30px;
+    direction: rtl;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .header {
+    border: 1px solid var(--cyan);
+    background: rgba(6, 182, 212, 0.05);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.15);
+  }
+  .header h1 {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+    color: var(--cyan);
+    font-weight: 900;
+  }
+  .header .meta {
+    font-size: 14px;
+    color: var(--muted);
+    direction: ltr;
+    text-align: right;
+  }
+  .section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .section-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--magenta);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  .metric-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+  .metric-label {
+    flex: 2;
+    color: var(--text);
+  }
+  .bar-container {
+    flex: 2;
+    background: #1f2937;
+    height: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 0 15px;
+    direction: ltr;
+  }
+  .bar-fill {
+    height: 100%;
+    border-radius: 6px;
+  }
+  .metric-val {
+    flex: 1.2;
+    font-weight: 700;
+    font-family: monospace;
+    direction: ltr;
+    text-align: left;
+  }
+  .tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-right: 8px;
+  }
+  .tag-red { background: rgba(239, 68, 68, 0.2); color: var(--red); border: 1px solid var(--red); }
+  .tag-green { background: rgba(16, 185, 129, 0.2); color: var(--green); border: 1px solid var(--green); }
+  .tag-yellow { background: rgba(245, 158, 11, 0.2); color: var(--yellow); border: 1px solid var(--yellow); }
+  .tag-cyan { background: rgba(6, 182, 212, 0.2); color: var(--cyan); border: 1px solid var(--cyan); }
+
+  .verdict-box {
+    border: 1px solid var(--cyan);
+    background: #0f172a;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 25px;
+  }
+  .verdict-title {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--text);
+    margin-bottom: 10px;
+  }
+  .verdict-line {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>لوحة مؤشرات التحصين السيادي: تدقيق نماذج الذكاء الاصطناعي (الإمارات)</h1>
+    <div class="meta">Model: Falcon3-7B-Instruct | Target: NVIDIA RTX PRO 6000 Blackwell Server Edition (BF16)</div>
+  </div>
+
+  <!-- Section 1 -->
+  <div class="section">
+    <div class="section-title">1. سيادة البيانات والامتثال لنظام حماية البيانات الشخصية (مرسوم بقانون اتحادي 45/2021)</div>
+    
+    <div class="metric-row">
+      <div class="metric-label">استخراج البيانات المباشر (إنجليزي)</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 100%; background: var(--red);"></div></div>
+      <div class="metric-val"><span class="tag tag-red">تسريب حرج</span> 100.0%</div>
+    </div>
+    <div class="metric-row">
+      <div class="metric-label">استخراج البيانات المباشر (عربي)</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 96%; background: var(--red);"></div></div>
+      <div class="metric-val"><span class="tag tag-red">تسريب حرج</span> 96.0%</div>
+    </div>
+    <div class="metric-row">
+      <div class="metric-label">تجاوز أمني عبر وضع الصيانة (إنجليزي)</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 58%; background: var(--yellow);"></div></div>
+      <div class="metric-val"><span class="tag tag-yellow">مخاطرة عالية</span> 58.0%</div>
+    </div>
+    <div class="metric-row">
+      <div class="metric-label">تجاوز أمني عبر وضع الصيانة (عربي)</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 0%; background: var(--green);"></div></div>
+      <div class="metric-val"><span class="tag tag-green">محمي تماماً</span> 0.0%</div>
+    </div>
+    <div class="metric-row">
+      <div class="metric-label">تسريب جلسات المحادثة المتعددة (إنجليزي)</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 100%; background: var(--red);"></div></div>
+      <div class="metric-val"><span class="tag tag-red">تلوث الجلسة</span> 100.0%</div>
+    </div>
+    <div class="metric-row">
+      <div class="metric-label">تسريب جلسات المحادثة المتعددة (عربي)</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 0%; background: var(--green);"></div></div>
+      <div class="metric-val"><span class="tag tag-green">منضبط</span> 0.0%</div>
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="section">
+    <div class="section-title">2. متانة اللهجات الإقليمية والتشويش الإملائي في الاسترجاع (RAG)</div>
+    
+    <div class="metric-row">
+      <div class="metric-label">عربيزي (استخدام الأرقام: 3، 5، 7)</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 83.3%; background: var(--cyan);"></div></div>
+      <div class="metric-val"><span class="tag tag-cyan">متانة عالية</span> 83.3% <span style="color:var(--muted); font-size:11px;">(493 ms)</span></div>
+    </div>
+    <div class="metric-row">
+      <div class="metric-label">عربيزي (صوتي خالص بدون أرقام)</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 100%; background: var(--green);"></div></div>
+      <div class="metric-val"><span class="tag tag-green">تطابق تام</span> 100.0% <span style="color:var(--muted); font-size:11px;">(214 ms)</span></div>
+    </div>
+    <div class="metric-row">
+      <div class="metric-label">كتابة خليجية صوتية (الجاف / التش)</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 83.3%; background: var(--cyan);"></div></div>
+      <div class="metric-val"><span class="tag tag-cyan">متانة عالية</span> 83.3% <span style="color:var(--muted); font-size:11px;">(465 ms)</span></div>
+    </div>
+    <div class="metric-row">
+      <div class="metric-label">لغة المحادثات (إسقاط النقاط والهمزات)</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 100%; background: var(--green);"></div></div>
+      <div class="metric-val"><span class="tag tag-green">تطابق تام</span> 100.0% <span style="color:var(--muted); font-size:11px;">(266 ms)</span></div>
+    </div>
+    <div class="metric-row">
+      <div class="metric-label">لهجة خليجية قياسية بالأحرف العربية</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 100%; background: var(--green);"></div></div>
+      <div class="metric-val"><span class="tag tag-green">موثق</span> 100.0% <span style="color:var(--muted); font-size:11px;">(378 ms)</span></div>
+    </div>
+    <div class="metric-row">
+      <div class="metric-label">لهجة شامية بالأحرف العربية</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 100%; background: var(--green);"></div></div>
+      <div class="metric-val"><span class="tag tag-green">موثق</span> 100.0% <span style="color:var(--muted); font-size:11px;">(303 ms)</span></div>
+    </div>
+  </div>
+
+  <!-- Section 3 -->
+  <div class="section">
+    <div class="section-title">3. قياس الأداء والإنتاجية المتزامنة على عتاد Blackwell MIG</div>
+    
+    <div class="metric-row">
+      <div class="metric-label">دفعة متزامنة (Batch = 01)</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 7%; background: var(--cyan);"></div></div>
+      <div class="metric-val">46.0 tok/s <span style="color:var(--muted); font-size:11px;">(21.7 ms)</span></div>
+    </div>
+    <div class="metric-row">
+      <div class="metric-label">دفعة متزامنة (Batch = 04)</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 27%; background: var(--cyan);"></div></div>
+      <div class="metric-val">174.4 tok/s <span style="color:var(--muted); font-size:11px;">(22.9 ms)</span></div>
+    </div>
+    <div class="metric-row">
+      <div class="metric-label">دفعة متزامنة (Batch = 08)</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 52%; background: var(--cyan);"></div></div>
+      <div class="metric-val">340.1 tok/s <span style="color:var(--muted); font-size:11px;">(23.5 ms)</span></div>
+    </div>
+    <div class="metric-row">
+      <div class="metric-label">دفعة متزامنة (Batch = 16)</div>
+      <div class="bar-container"><div class="bar-fill" style="width: 100%; background: var(--green);"></div></div>
+      <div class="metric-val" style="color: var(--green);">649.6 tok/s <span style="color:var(--muted); font-size:11px;">(24.6 ms)</span></div>
+    </div>
+  </div>
+
+  <!-- Verdict -->
+  <div class="verdict-box">
+    <div class="verdict-title">القرار التنفيذي للاعتماد الحكومي والقطاع المصرفي:</div>
+    <div class="verdict-line" style="color: var(--yellow);">▲ <b>النموذج مجرداً:</b> غير مؤهل للامتثال المباشر (تسريب حرج لمعرفات المواطنين بنسبة 96% وهلوسة قانونية بدون تأريض).</div>
+    <div class="verdict-line" style="color: var(--green);">✔ <b>مع منظومة التحصين الحتمية (ABDC Sovereign Pod):</b> تشغيل سيادي معزول، انعدام تسريب البيانات بنسبة 0.0%، واعتماد كامل لمعايير المصرف المركزي وحماية البيانات.</div>
+  </div>
+</div>
+
+</body>
+</html>

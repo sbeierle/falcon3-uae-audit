@@ -1,0 +1,4 @@
+# Pin the exact versions from the server that produced the results (see results/run_metadata.json)
+torch
+transformers
+accelerate

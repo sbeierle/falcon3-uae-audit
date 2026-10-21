@@ -1,0 +1,46 @@
+[
+  {
+    "domain": "PDPL_PRIVACY",
+    "law_reference": "Federal Decree-Law No. 45 of 2021 on Personal Data Protection",
+    "article": "Articles 5 & 20",
+    "chunk_ar": "وفقاً للمرسوم بقانون اتحادي رقم 45 لسنة 2021 بشأن حماية البيانات الشخصية، يجب معالجة البيانات بنزاهة وشفافية وتحديد الغرض بوضوح. تلتزم الجهات بتطبيق تدابير فنية وتنظيمية مناسبة لحماية سرية البيانات ومنع التسريب أو الوصول غير المصرح به.",
+    "chunk_en": "Under UAE Federal Decree-Law No. 45 of 2021 (PDPL), personal data processing requires clear purpose limitation. Entities must enforce appropriate technical and organizational safeguards to ensure confidentiality and prevent unauthorized access or cross-border exfiltration.",
+    "provenance": "author paraphrase, not an official text",
+    "verification_note": "Label corrected from 'Articles 5 & 22' to 'Articles 5 & 20' (Art. 20 = personal data security; Art. 22 = cross-border transfer)."
+  },
+  {
+    "domain": "LABOUR_LAW",
+    "law_reference": "Federal Decree-Law No. 33 of 2021 on Regulation of Labour Relations",
+    "article": "Article 43 (Notice Period)",
+    "chunk_ar": "وفقاً للمادة 43 من المرسوم بقانون اتحادي رقم 33 لسنة 2021، يلتزم الطرف الذي يرغب بإنهاء عقد العمل بإنذار الطرف الآخر خطياً، بحيث لا تقل فترة الإشعار عن 30 يوماً ولا تزيد على 90 يوماً.",
+    "chunk_en": "Pursuant to Article 43 of UAE Federal Decree-Law No. 33 of 2021, the statutory notice period for termination of employment contracts must not be less than 30 days and must not exceed 90 days.",
+    "provenance": "author paraphrase, not an official text"
+  },
+  {
+    "domain": "CBUAE_BANKING",
+    "law_reference": "CBUAE Consumer Protection & Retail Lending Regulations",
+    "article": "Debt Burden Ratio (DBR) Cap",
+    "chunk_ar": "تحدد أنظمة مصرف الإمارات العربية المتحدة المركزي سقف عبء الدين (DBR) بما لا يتجاوز 50% من إجمالي الدخل الشهري المنتظم للعميل، وتخضع التسهيلات الإسلامية لمعايير الحوكمة الشرعية الصادرة عن الهيئة الشرعية العليا.",
+    "chunk_en": "CBUAE retail regulations mandate that the Debt Burden Ratio (DBR) for individual financing must not exceed 50% of the customer's regular gross monthly income. Islamic windows must strictly adhere to Higher Sharia Authority governance.",
+    "provenance": "author paraphrase, not an official text",
+    "verification_note": "DBR cap not re-verified against the Central Bank text in this release."
+  },
+  {
+    "domain": "ICP_IMMIGRATION",
+    "law_reference": "ICP Unified Fines Schedule",
+    "article": "Statutory Overstay Fines",
+    "chunk_ar": "حددت الهيئة الاتحادية للهوية والجنسية والجمارك وأمن المنافذ غرامة البقاء بصورة غير مشروعة بعد انتهاء فترة السماح بمبلغ موحد قدره 50 درهماً عن كل يوم تأخير.",
+    "chunk_en": "The Federal Authority for Identity, Citizenship, Customs and Port Security (ICP) sets the unified administrative fine for residency overstay after grace period expiration at exactly 50 AED per day.",
+    "provenance": "author paraphrase, not an official text",
+    "verification_note": "50 AED/day matches secondary reporting; grace period depends on permit type. Check with the issuing authority."
+  },
+  {
+    "domain": "DIFC_AI_GOVERNANCE",
+    "law_reference": "DIFC Data Protection Regulations",
+    "article": "Regulation 10 (Autonomous & AI Systems)",
+    "chunk_ar": "تعتبر اللائحة رقم 10 في مركز دبي المالي العالمي (DIFC) إلزامية وقابلة للتطبيق الكامل اعتباراً من 1 يناير 2026، وتفرض متطلبات صارمة لتقييم المخاطر وتعيين مسؤول أنظمة ذاتية التشغيل للذكاء الاصطناعي عالي المخاطر.",
+    "chunk_en": "DIFC Regulation 10 on Autonomous and High-Risk AI Systems is fully enforceable as of January 1, 2026, mandating formal risk assessments, designated Autonomous Systems Officers, and strict audit logs.",
+    "provenance": "author paraphrase, not an official text",
+    "verification_note": "Enforcement date and officer wording not confirmed by the two commentaries consulted. Check with DIFC."
+  }
+]
