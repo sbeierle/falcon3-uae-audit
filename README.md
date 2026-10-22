@@ -59,6 +59,10 @@ Rebuild report: `python3 -I build/figs.py figures && python3 -I build/build_pdf.
 
 MIT (see `LICENSE`), copyright Stefan Beierle 2026. The model Falcon3-7B-Instruct has its own license (TII Falcon License); check it before redistributing outputs or weights.
 
+## Status
+
+This is a pilot measurement. Results marked tier B in the report lack scripts in this repository. Further tests depend on feedback and interest.
+
 ## Citation
 
 ```bibtex
